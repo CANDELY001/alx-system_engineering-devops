@@ -5,8 +5,9 @@
 ## Issue Summary:
 
 - **Duration:**
-  - *Start Time*: October 5, 2023, 14:30 UTC
-  - *End Time*: October 6, 2023, 03:45 UTC
+
+  - _Start Time_: Sunday 12, 2023, 14:30 UTC
+  - _End Time_: Monday 13, 2023, 03:45 UTC
 
 - **Impact:**
   - Our website took an unscheduled siesta, leaving users stuck in a digital traffic jam for 12 long hours.
@@ -18,19 +19,23 @@
 ## Timeline:
 
 - **Detection:**
-  - *October 5, 2023, 14:30 UTC*: Our monitoring system played the role of Sherlock Holmes and detected the issue – slow response times and errors were the culprits.
+
+  - _Sunday 12, 2023, 14:30 UTC_: Our monitoring system played the role of Sherlock Holmes and detected the issue – slow response times and errors were the culprits.
 
 - **Actions Taken:**
+
   - Engineers sprang into action faster than caffeinated squirrels.
   - Initial assumption: A surprise visit from a traffic tsunami due to a marketing campaign.
   - Investigated the usual suspects: database server, web servers, and the "Balancing Act" (load balancer).
 
 - **Misleading Paths:**
+
   - Started a wild goose chase by optimizing database queries and throwing more web server instances into the party.
   - Scaling resources felt like adding more horsepower to a snail - it didn't help.
   - Questioned network cables, but they swore they were innocent.
 
 - **Escalation:**
+
   - After two hours, we had to wake up the senior infrastructure team from their beauty sleep.
 
 - **Resolution:**
@@ -43,6 +48,7 @@
 ## Root Cause and Resolution:
 
 - **Root Cause:**
+
   - The culprit was an overly enthusiastic Web Application Firewall (WAF) rule that mistook good users for bad actors.
   - This rule sparked chaos, making our servers play a game of digital whack-a-mole.
 
@@ -56,6 +62,7 @@
 ## Corrective and Preventative Measures:
 
 - **Improvements/Fixes:**
+
   - We've instituted a WAF rule code review process, making sure they don't have too much caffeine.
   - Created a playbook for WAF-related emergencies, so we're better prepared next time.
   - Upgraded our monitoring arsenal to detect any WAF rule misbehavior.
